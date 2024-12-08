@@ -1,38 +1,28 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "stunningstatues",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Stunning Statues",
+	"description": "Adds elegant stone and mossy stone statues for decoration purposes.",
 	"authors": [
-		"Me!"
+		"SirJain"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/stunningstatues/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
-		],
-		"client": [
-			"com.example.ExampleModClient"
+			"sirjain.stunningstatues.StunningStatues"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
+		"stunningstatues.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.10",
-		"minecraft": "~1.20.6",
-		"java": ">=21",
+		"minecraft": ">=1.20",
+		"java": ">=17",
 		"fabric-api": "*"
 	},
 	"suggests": {
