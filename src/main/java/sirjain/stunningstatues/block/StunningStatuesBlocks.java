@@ -1,7 +1,6 @@
 package sirjain.stunningstatues.block;
 
 import net.minecraft.block.Block;
-import net.minecraft.client.render.entity.feature.EnergySwirlOverlayFeatureRenderer;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -47,13 +46,13 @@ public class StunningStatuesBlocks {
 	public static void registerNormalStatues() {
 		BANNER_STATUE = registerNormalStatue("banner");
 		BLAZE_STATUE = registerNormalStatue("blaze");
-		COPPER_GOLEM_STATUE = registerNormalStatue("copper_golem");
+		COPPER_GOLEM_STATUE = registerUncommonStatue("copper_golem");
 		CREEPER_STATUE = registerNormalStatue("creeper");
-		DUMBO_BLOB_STATUE = registerNormalStatue("dumbo_blob");
+		DUMBO_BLOB_STATUE = registerUncommonStatue("dumbo_blob");
 		ENDERMITE_STATUE = registerNormalStatue("endermite");
 		GHAST_STATUE = registerNormalStatue("ghast");
-		ISOPOD_STATUE = registerNormalStatue("isopod");
-		MANTA_RAY_STATUE = registerNormalStatue("manta_ray");
+		ISOPOD_STATUE = registerUncommonStatue("isopod");
+		MANTA_RAY_STATUE = registerUncommonStatue("manta_ray");
 		PHANTOM_STATUE = registerNormalStatue("phantom");
 		PIXIE_ORB_STATUE = registerNormalStatue("pixie_orb");
 		SHIELD_STATUE = registerNormalStatue("shield");
@@ -67,13 +66,13 @@ public class StunningStatuesBlocks {
 	public static void registerMossyStatues() {
 		MOSSY_BANNER_STATUE = registerMossyStatue("banner");
 		MOSSY_BLAZE_STATUE = registerMossyStatue("blaze");
-		MOSSY_COPPER_GOLEM_STATUE = registerMossyStatue("copper_golem");
+		MOSSY_COPPER_GOLEM_STATUE = registerUncommonMossyStatue("copper_golem");
 		MOSSY_CREEPER_STATUE = registerMossyStatue("creeper");
-		MOSSY_DUMBO_BLOB_STATUE = registerMossyStatue("dumbo_blob");
+		MOSSY_DUMBO_BLOB_STATUE = registerUncommonMossyStatue("dumbo_blob");
 		MOSSY_ENDERMITE_STATUE = registerMossyStatue("endermite");
 		MOSSY_GHAST_STATUE = registerMossyStatue("ghast");
-		MOSSY_ISOPOD_STATUE = registerMossyStatue("isopod");
-		MOSSY_MANTA_RAY_STATUE = registerMossyStatue("manta_ray");
+		MOSSY_ISOPOD_STATUE = registerUncommonMossyStatue("isopod");
+		MOSSY_MANTA_RAY_STATUE = registerUncommonMossyStatue("manta_ray");
 		MOSSY_PHANTOM_STATUE = registerMossyStatue("phantom");
 		MOSSY_PIXIE_ORB_STATUE = registerMossyStatue("pixie_orb");
 		MOSSY_SHIELD_STATUE = registerMossyStatue("shield");
@@ -98,7 +97,25 @@ public class StunningStatuesBlocks {
 		return Registry.register(
 			Registries.BLOCK,
 			new Identifier(StunningStatues.MOD_ID, "mossy_" + identifier + "_statue"),
-			new MossyStatueBlock()
+			new StatueBlock()
+		);
+	}
+
+	// Helper method to register uncommon statue
+	public static Block registerUncommonStatue(String identifier) {
+		return Registry.register(
+			Registries.BLOCK,
+			new Identifier(StunningStatues.MOD_ID,identifier + "_statue"),
+			new UncommonStatueBlock()
+		);
+	}
+
+	// Helper method to register mossy uncommon statue
+	public static Block registerUncommonMossyStatue(String identifier) {
+		return Registry.register(
+			Registries.BLOCK,
+			new Identifier(StunningStatues.MOD_ID, "mossy_" + identifier + "_statue"),
+			new UncommonStatueBlock()
 		);
 	}
 }
