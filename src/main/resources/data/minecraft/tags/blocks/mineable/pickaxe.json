@@ -1,6 +1,37 @@
 {
   "values": [
     "stunningstatues:banner_statue",
-    "stunningstatues:blaze_statue"
+    "stunningstatues:blaze_statue",
+    "stunningstatues:copper_golem_statue",
+    "stunningstatues:creeper_statue",
+    "stunningstatues:dumbo_blob_statue",
+    "stunningstatues:endermite_statue",
+    "stunningstatues:ghaast_statue",
+    "stunningstatues:isopod_statue",
+    "stunningstatues:manta_ray_statue",
+    "stunningstatues:phantom_statue",
+    "stunningstatues:pixie_orb_statue",
+    "stunningstatues:shield_statue",
+    "stunningstatues:spider_statue",
+    "stunningstatues:squid_statue",
+    "stunningstatues:tnt_statue",
+    "stunningstatues:turtle_statue",
+
+    "stunningstatues:mossy_banner_statue",
+    "stunningstatues:mossy_blaze_statue",
+    "stunningstatues:mossy_copper_golem_statue",
+    "stunningstatues:mossy_creeper_statue",
+    "stunningstatues:mossy_dumbo_blob_statue",
+    "stunningstatues:mossy_endermite_statue",
+    "stunningstatues:mossy_ghaast_statue",
+    "stunningstatues:mossy_isopod_statue",
+    "stunningstatues:mossy_manta_ray_statue",
+    "stunningstatues:mossy_phantom_statue",
+    "stunningstatues:mossy_pixie_orb_statue",
+    "stunningstatues:mossy_shield_statue",
+    "stunningstatues:mossy_spider_statue",
+    "stunningstatues:mossy_squid_statue",
+    "stunningstatues:mossy_tnt_statue",
+    "stunningstatues:mossy_turtle_statue"
   ]
 }
