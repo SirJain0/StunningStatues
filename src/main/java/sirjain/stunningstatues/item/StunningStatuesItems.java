@@ -54,13 +54,13 @@ public class StunningStatuesItems {
 	public static void registerNormalStatueBlockItems() {
 		BANNER_STATUE_ITEM = registerNormalStatueBlockItem("banner", StunningStatuesBlocks.BANNER_STATUE);
 		BLAZE_STATUE_ITEM = registerNormalStatueBlockItem("blaze", StunningStatuesBlocks.BLAZE_STATUE);
-		COPPER_GOLEM_STATUE_ITEM = registerNormalStatueBlockItem("copper_golem", StunningStatuesBlocks.COPPER_GOLEM_STATUE);
+		COPPER_GOLEM_STATUE_ITEM = registerUncommonStatueBlockItem("copper_golem", StunningStatuesBlocks.COPPER_GOLEM_STATUE);
 		CREEPER_STATUE_ITEM = registerNormalStatueBlockItem("creeper", StunningStatuesBlocks.CREEPER_STATUE);
-		DUMBO_BLOB_STATUE_ITEM = registerNormalStatueBlockItem("dumbo_blob", StunningStatuesBlocks.DUMBO_BLOB_STATUE);
+		DUMBO_BLOB_STATUE_ITEM = registerUncommonStatueBlockItem("dumbo_blob", StunningStatuesBlocks.DUMBO_BLOB_STATUE);
 		ENDERMITE_STATUE_ITEM = registerNormalStatueBlockItem("endermite", StunningStatuesBlocks.ENDERMITE_STATUE);
 		GHAST_STATUE_ITEM = registerNormalStatueBlockItem("ghast", StunningStatuesBlocks.GHAST_STATUE);
-		ISOPOD_STATUE_ITEM = registerNormalStatueBlockItem("isopod", StunningStatuesBlocks.ISOPOD_STATUE);
-		MANTA_RAY_STATUE_ITEM = registerNormalStatueBlockItem("manta_ray", StunningStatuesBlocks.MANTA_RAY_STATUE);
+		ISOPOD_STATUE_ITEM = registerUncommonStatueBlockItem("isopod", StunningStatuesBlocks.ISOPOD_STATUE);
+		MANTA_RAY_STATUE_ITEM = registerUncommonStatueBlockItem("manta_ray", StunningStatuesBlocks.MANTA_RAY_STATUE);
 		PHANTOM_STATUE_ITEM = registerNormalStatueBlockItem("phantom", StunningStatuesBlocks.PHANTOM_STATUE);
 		PIXIE_ORB_STATUE_ITEM = registerNormalStatueBlockItem("pixie_orb", StunningStatuesBlocks.PIXIE_ORB_STATUE);
 		SHIELD_STATUE_ITEM= registerNormalStatueBlockItem("shield", StunningStatuesBlocks.SHIELD_STATUE);
@@ -74,13 +74,13 @@ public class StunningStatuesItems {
 	public static void registerMossyStatueBlockItems() {
 		MOSSY_BANNER_STATUE_ITEM = registerMossyStatueBlockItem("banner", StunningStatuesBlocks.MOSSY_BANNER_STATUE);
 		MOSSY_BLAZE_STATUE_ITEM = registerMossyStatueBlockItem("blaze", StunningStatuesBlocks.MOSSY_BLAZE_STATUE);
-		MOSSY_COPPER_GOLEM_STATUE_ITEM = registerMossyStatueBlockItem("copper_golem", StunningStatuesBlocks.MOSSY_COPPER_GOLEM_STATUE);
+		MOSSY_COPPER_GOLEM_STATUE_ITEM = registerUncommonMossyStatueBlockItem("copper_golem", StunningStatuesBlocks.MOSSY_COPPER_GOLEM_STATUE);
 		MOSSY_CREEPER_STATUE_ITEM = registerMossyStatueBlockItem("creeper", StunningStatuesBlocks.MOSSY_CREEPER_STATUE);
-		MOSSY_DUMBO_BLOB_STATUE_ITEM = registerMossyStatueBlockItem("dumbo_blob", StunningStatuesBlocks.MOSSY_DUMBO_BLOB_STATUE);
+		MOSSY_DUMBO_BLOB_STATUE_ITEM = registerUncommonMossyStatueBlockItem("dumbo_blob", StunningStatuesBlocks.MOSSY_DUMBO_BLOB_STATUE);
 		MOSSY_ENDERMITE_STATUE_ITEM = registerMossyStatueBlockItem("endermite", StunningStatuesBlocks.MOSSY_ENDERMITE_STATUE);
 		MOSSY_GHAST_STATUE_ITEM = registerMossyStatueBlockItem("ghast", StunningStatuesBlocks.MOSSY_GHAST_STATUE);
-		MOSSY_ISOPOD_STATUE_ITEM = registerMossyStatueBlockItem("isopod", StunningStatuesBlocks.MOSSY_ISOPOD_STATUE);
-		MOSSY_MANTA_RAY_STATUE_ITEM = registerMossyStatueBlockItem("manta_ray", StunningStatuesBlocks.MOSSY_MANTA_RAY_STATUE);
+		MOSSY_ISOPOD_STATUE_ITEM = registerUncommonMossyStatueBlockItem("isopod", StunningStatuesBlocks.MOSSY_ISOPOD_STATUE);
+		MOSSY_MANTA_RAY_STATUE_ITEM = registerUncommonMossyStatueBlockItem("manta_ray", StunningStatuesBlocks.MOSSY_MANTA_RAY_STATUE);
 		MOSSY_PHANTOM_STATUE_ITEM = registerMossyStatueBlockItem("phantom", StunningStatuesBlocks.MOSSY_PHANTOM_STATUE);
 		MOSSY_PIXIE_ORB_STATUE_ITEM = registerMossyStatueBlockItem("pixie_orb", StunningStatuesBlocks.MOSSY_PIXIE_ORB_STATUE);
 		MOSSY_SHIELD_STATUE_ITEM= registerMossyStatueBlockItem("shield", StunningStatuesBlocks.MOSSY_SHIELD_STATUE);
@@ -103,49 +103,65 @@ public class StunningStatuesItems {
 		return Registry.register(
 			Registries.ITEM,
 			new Identifier(StunningStatues.MOD_ID, "mossy_" + identifier + "_statue"),
+			new BlockItem(block, new Item.Settings())
+		);
+	}
+
+	public static BlockItem registerUncommonStatueBlockItem(String identifier, Block block) {
+		return Registry.register(
+			Registries.ITEM,
+			new Identifier(StunningStatues.MOD_ID, identifier + "_statue"),
+			new BlockItem(block, new Item.Settings().rarity(Rarity.UNCOMMON))
+		);
+	}
+
+	public static BlockItem registerUncommonMossyStatueBlockItem(String identifier, Block block) {
+		return Registry.register(
+			Registries.ITEM,
+			new Identifier(StunningStatues.MOD_ID, "mossy_" + identifier + "_statue"),
 			new BlockItem(block, new Item.Settings().rarity(Rarity.UNCOMMON))
 		);
 	}
 
 	public static void addItemsToTabs() {
-		addItemToTab(BANNER_STATUE_ITEM);
-		addItemToTab(BLAZE_STATUE_ITEM);
-		addItemToTab(COPPER_GOLEM_STATUE_ITEM);
-		addItemToTab(CREEPER_STATUE_ITEM);
-		addItemToTab(DUMBO_BLOB_STATUE_ITEM);
-		addItemToTab(ENDERMITE_STATUE_ITEM);
-		addItemToTab(GHAST_STATUE_ITEM);
-		addItemToTab(ISOPOD_STATUE_ITEM);
-		addItemToTab(MANTA_RAY_STATUE_ITEM);
-		addItemToTab(PHANTOM_STATUE_ITEM);
-		addItemToTab(PIXIE_ORB_STATUE_ITEM);
-		addItemToTab(SHIELD_STATUE_ITEM);
-		addItemToTab(SPIDER_STATUE_ITEM);
-		addItemToTab(SQUID_STATUE_ITEM);
-		addItemToTab(SWORD_STATUE_ITEM);
-		addItemToTab(TNT_STATUE_ITEM);
-		addItemToTab(TURTLE_STATUE_ITEM);
-
-		addItemToTab(MOSSY_BANNER_STATUE_ITEM);
-		addItemToTab(MOSSY_BLAZE_STATUE_ITEM);
-		addItemToTab(MOSSY_COPPER_GOLEM_STATUE_ITEM);
-		addItemToTab(MOSSY_CREEPER_STATUE_ITEM);
-		addItemToTab(MOSSY_DUMBO_BLOB_STATUE_ITEM);
-		addItemToTab(MOSSY_ENDERMITE_STATUE_ITEM);
-		addItemToTab(MOSSY_GHAST_STATUE_ITEM);
-		addItemToTab(MOSSY_ISOPOD_STATUE_ITEM);
-		addItemToTab(MOSSY_MANTA_RAY_STATUE_ITEM);
-		addItemToTab(MOSSY_PHANTOM_STATUE_ITEM);
-		addItemToTab(MOSSY_PIXIE_ORB_STATUE_ITEM);
-		addItemToTab(MOSSY_SHIELD_STATUE_ITEM);
-		addItemToTab(MOSSY_SPIDER_STATUE_ITEM);
-		addItemToTab(MOSSY_SQUID_STATUE_ITEM);
-		addItemToTab(MOSSY_SWORD_STATUE_ITEM);
-		addItemToTab(MOSSY_TNT_STATUE_ITEM);
 		addItemToTab(MOSSY_TURTLE_STATUE_ITEM);
+		addItemToTab(MOSSY_TNT_STATUE_ITEM);
+		addItemToTab(MOSSY_SWORD_STATUE_ITEM);
+		addItemToTab(MOSSY_SQUID_STATUE_ITEM);
+		addItemToTab(MOSSY_SPIDER_STATUE_ITEM);
+		addItemToTab(MOSSY_SHIELD_STATUE_ITEM);
+		addItemToTab(MOSSY_PIXIE_ORB_STATUE_ITEM);
+		addItemToTab(MOSSY_PHANTOM_STATUE_ITEM);
+		addItemToTab(MOSSY_MANTA_RAY_STATUE_ITEM);
+		addItemToTab(MOSSY_ISOPOD_STATUE_ITEM);
+		addItemToTab(MOSSY_GHAST_STATUE_ITEM);
+		addItemToTab(MOSSY_ENDERMITE_STATUE_ITEM);
+		addItemToTab(MOSSY_DUMBO_BLOB_STATUE_ITEM);
+		addItemToTab(MOSSY_CREEPER_STATUE_ITEM);
+		addItemToTab(MOSSY_COPPER_GOLEM_STATUE_ITEM);
+		addItemToTab(MOSSY_BLAZE_STATUE_ITEM);
+		addItemToTab(MOSSY_BANNER_STATUE_ITEM);
+
+		addItemToTab(TURTLE_STATUE_ITEM);
+		addItemToTab(TNT_STATUE_ITEM);
+		addItemToTab(SWORD_STATUE_ITEM);
+		addItemToTab(SQUID_STATUE_ITEM);
+		addItemToTab(SPIDER_STATUE_ITEM);
+		addItemToTab(SHIELD_STATUE_ITEM);
+		addItemToTab(PIXIE_ORB_STATUE_ITEM);
+		addItemToTab(PHANTOM_STATUE_ITEM);
+		addItemToTab(MANTA_RAY_STATUE_ITEM);
+		addItemToTab(ISOPOD_STATUE_ITEM);
+		addItemToTab(GHAST_STATUE_ITEM);
+		addItemToTab(ENDERMITE_STATUE_ITEM);
+		addItemToTab(DUMBO_BLOB_STATUE_ITEM);
+		addItemToTab(CREEPER_STATUE_ITEM);
+		addItemToTab(COPPER_GOLEM_STATUE_ITEM);
+		addItemToTab(BLAZE_STATUE_ITEM);
+		addItemToTab(BANNER_STATUE_ITEM);
 	}
 
 	public static void addItemToTab(Item item) {
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> entries.addAfter(item, Items.INFESTED_MOSSY_STONE_BRICKS));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> entries.addAfter(Items.INFESTED_MOSSY_STONE_BRICKS, item));
 	}
 }
