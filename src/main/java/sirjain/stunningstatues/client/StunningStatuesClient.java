@@ -11,6 +11,7 @@ public class StunningStatuesClient implements ClientModInitializer {
 	public void onInitializeClient() {
 		registerCutoutBlocks(
 			StunningStatuesBlocks.BANNER_STATUE,
+			StunningStatuesBlocks.COPPER_GOLEM_STATUE,
 			StunningStatuesBlocks.ISOPOD_STATUE,
 			StunningStatuesBlocks.MANTA_RAY_STATUE,
 			StunningStatuesBlocks.PHANTOM_STATUE,
@@ -19,6 +20,7 @@ public class StunningStatuesClient implements ClientModInitializer {
 			StunningStatuesBlocks.MOSSY_BANNER_STATUE,
 			StunningStatuesBlocks.MOSSY_BLAZE_STATUE,
 			StunningStatuesBlocks.MOSSY_CREEPER_STATUE,
+			StunningStatuesBlocks.MOSSY_COPPER_GOLEM_STATUE,
 			StunningStatuesBlocks.MOSSY_ENDERMITE_STATUE,
 			StunningStatuesBlocks.MOSSY_GHAST_STATUE,
 			StunningStatuesBlocks.MOSSY_ISOPOD_STATUE,
