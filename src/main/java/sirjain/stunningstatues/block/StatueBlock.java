@@ -13,7 +13,7 @@ public class StatueBlock extends Block {
 	public static final VoxelShape HITBOX = Block.createCuboidShape(1, 0, 1, 15, 2, 15);
 
 	public StatueBlock(boolean isUncommon) {
-		super(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS).nonOpaque().luminance((isUncommon ? 15 : 0)));
+		super(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS).nonOpaque().luminance((isUncommon ? 5 : 0)));
 	}
 
 	@Override
