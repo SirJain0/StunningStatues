@@ -12,8 +12,8 @@ import net.minecraft.world.BlockView;
 public class StatueBlock extends Block {
 	public static final VoxelShape HITBOX = Block.createCuboidShape(1, 0, 1, 15, 2, 15);
 
-	public StatueBlock() {
-		super(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS).nonOpaque());
+	public StatueBlock(boolean isUncommon) {
+		super(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS).nonOpaque().luminance((isUncommon ? 15 : 0)));
 	}
 
 	@Override

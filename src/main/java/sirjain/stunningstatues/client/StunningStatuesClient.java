@@ -21,6 +21,7 @@ public class StunningStatuesClient implements ClientModInitializer {
 			StunningStatuesBlocks.MOSSY_BLAZE_STATUE,
 			StunningStatuesBlocks.MOSSY_CREEPER_STATUE,
 			StunningStatuesBlocks.MOSSY_COPPER_GOLEM_STATUE,
+			StunningStatuesBlocks.MOSSY_DUMBO_BLOB_STATUE,
 			StunningStatuesBlocks.MOSSY_ENDERMITE_STATUE,
 			StunningStatuesBlocks.MOSSY_GHAST_STATUE,
 			StunningStatuesBlocks.MOSSY_ISOPOD_STATUE,
