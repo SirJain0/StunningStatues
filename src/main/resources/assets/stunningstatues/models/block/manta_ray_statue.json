@@ -1,6 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"texture_size": [128, 128],
+	"parent": "block/block",
 	"textures": {
 		"3": "stunningstatues:block/manta_ray_statue",
 		"particle": "stunningstatues:block/manta_ray_statue"

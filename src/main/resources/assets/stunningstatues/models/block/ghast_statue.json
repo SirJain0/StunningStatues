@@ -1,6 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"texture_size": [128, 128],
+	"parent": "block/block",
 	"textures": {
 		"1": "stunningstatues:block/ghast_statue",
 		"particle": "stunningstatues:block/ghast_statue"
