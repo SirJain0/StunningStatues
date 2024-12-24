@@ -1,7 +1,6 @@
 package sirjain.stunningstatues.block;
 
 import net.minecraft.block.Block;
-import net.minecraft.client.render.entity.feature.EnergySwirlOverlayFeatureRenderer;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
