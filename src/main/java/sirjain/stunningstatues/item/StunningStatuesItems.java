@@ -62,7 +62,7 @@ public class StunningStatuesItems {
 		ISOPOD_STATUE_ITEM = registerUncommonStatueBlockItem("isopod", StunningStatuesBlocks.ISOPOD_STATUE);
 		MANTA_RAY_STATUE_ITEM = registerUncommonStatueBlockItem("manta_ray", StunningStatuesBlocks.MANTA_RAY_STATUE);
 		PHANTOM_STATUE_ITEM = registerNormalStatueBlockItem("phantom", StunningStatuesBlocks.PHANTOM_STATUE);
-		PIXIE_ORB_STATUE_ITEM = registerNormalStatueBlockItem("pixie_orb", StunningStatuesBlocks.PIXIE_ORB_STATUE);
+		PIXIE_ORB_STATUE_ITEM = registerUncommonStatueBlockItem("pixie_orb", StunningStatuesBlocks.PIXIE_ORB_STATUE);
 		SHIELD_STATUE_ITEM= registerNormalStatueBlockItem("shield", StunningStatuesBlocks.SHIELD_STATUE);
 		SPIDER_STATUE_ITEM = registerNormalStatueBlockItem("spider", StunningStatuesBlocks.SPIDER_STATUE);
 		SQUID_STATUE_ITEM = registerNormalStatueBlockItem("squid", StunningStatuesBlocks.SQUID_STATUE);
@@ -82,7 +82,7 @@ public class StunningStatuesItems {
 		MOSSY_ISOPOD_STATUE_ITEM = registerUncommonMossyStatueBlockItem("isopod", StunningStatuesBlocks.MOSSY_ISOPOD_STATUE);
 		MOSSY_MANTA_RAY_STATUE_ITEM = registerUncommonMossyStatueBlockItem("manta_ray", StunningStatuesBlocks.MOSSY_MANTA_RAY_STATUE);
 		MOSSY_PHANTOM_STATUE_ITEM = registerMossyStatueBlockItem("phantom", StunningStatuesBlocks.MOSSY_PHANTOM_STATUE);
-		MOSSY_PIXIE_ORB_STATUE_ITEM = registerMossyStatueBlockItem("pixie_orb", StunningStatuesBlocks.MOSSY_PIXIE_ORB_STATUE);
+		MOSSY_PIXIE_ORB_STATUE_ITEM = registerUncommonMossyStatueBlockItem("pixie_orb", StunningStatuesBlocks.MOSSY_PIXIE_ORB_STATUE);
 		MOSSY_SHIELD_STATUE_ITEM= registerMossyStatueBlockItem("shield", StunningStatuesBlocks.MOSSY_SHIELD_STATUE);
 		MOSSY_SPIDER_STATUE_ITEM = registerMossyStatueBlockItem("spider", StunningStatuesBlocks.MOSSY_SPIDER_STATUE);
 		MOSSY_SQUID_STATUE_ITEM = registerMossyStatueBlockItem("squid", StunningStatuesBlocks.MOSSY_SQUID_STATUE);

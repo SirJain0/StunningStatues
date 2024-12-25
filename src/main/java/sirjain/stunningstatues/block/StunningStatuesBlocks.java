@@ -54,7 +54,7 @@ public class StunningStatuesBlocks {
 		ISOPOD_STATUE = registerUncommonStatue("isopod");
 		MANTA_RAY_STATUE = registerUncommonStatue("manta_ray");
 		PHANTOM_STATUE = registerNormalStatue("phantom");
-		PIXIE_ORB_STATUE = registerNormalStatue("pixie_orb");
+		PIXIE_ORB_STATUE = registerUncommonStatue("pixie_orb");
 		SHIELD_STATUE = registerNormalStatue("shield");
 		SPIDER_STATUE = registerNormalStatue("spider");
 		SQUID_STATUE = registerNormalStatue("squid");
@@ -74,7 +74,7 @@ public class StunningStatuesBlocks {
 		MOSSY_ISOPOD_STATUE = registerUncommonMossyStatue("isopod");
 		MOSSY_MANTA_RAY_STATUE = registerUncommonMossyStatue("manta_ray");
 		MOSSY_PHANTOM_STATUE = registerMossyStatue("phantom");
-		MOSSY_PIXIE_ORB_STATUE = registerMossyStatue("pixie_orb");
+		MOSSY_PIXIE_ORB_STATUE = registerUncommonMossyStatue("pixie_orb");
 		MOSSY_SHIELD_STATUE = registerMossyStatue("shield");
 		MOSSY_SPIDER_STATUE = registerMossyStatue("spider");
 		MOSSY_SQUID_STATUE = registerMossyStatue("squid");
