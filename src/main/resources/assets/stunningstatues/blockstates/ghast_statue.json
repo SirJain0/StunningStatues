@@ -1,5 +1,19 @@
 {
 	"variants": {
-		"": {"model": "stunningstatues:block/ghast_statue"}
+		"facing=east": {
+			"model": "stunningstatues:block/ghast_statue",
+			"y": 270
+		},
+		"facing=north": {
+			"model": "stunningstatues:block/ghast_statue",
+			"y": 180
+		},
+		"facing=south": {
+			"model": "stunningstatues:block/ghast_statue"
+		},
+		"facing=west": {
+			"model": "stunningstatues:block/ghast_statue",
+			"y": 90
+		}
 	}
 }

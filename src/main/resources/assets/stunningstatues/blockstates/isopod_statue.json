@@ -1,5 +1,19 @@
 {
 	"variants": {
-		"": {"model": "stunningstatues:block/isopod_statue"}
+		"facing=east": {
+			"model": "stunningstatues:block/isopod_statue",
+			"y": 270
+		},
+		"facing=north": {
+			"model": "stunningstatues:block/isopod_statue",
+			"y": 180
+		},
+		"facing=south": {
+			"model": "stunningstatues:block/isopod_statue"
+		},
+		"facing=west": {
+			"model": "stunningstatues:block/isopod_statue",
+			"y": 90
+		}
 	}
 }
