@@ -9,7 +9,7 @@
 	],
 	"contact": {
 	},
-	"icon": "assets/stunningstatues/icon.png",
+	"icon": "assets/stunningstatues/stunning_statues_icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
