@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "stunningstatues:dumbo_blob_statue"
+		},
+		{
+			"item": "minecraft:vine"
+		}
+	],
+	"result": {
+		"item": "stunningstatues:mossy_dumbo_blob_statue",
+		"count": 1
+	}
+}

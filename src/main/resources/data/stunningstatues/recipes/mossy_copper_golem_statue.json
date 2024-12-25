@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "stunningstatues:copper_golem_statue"
+		},
+		{
+			"item": "minecraft:vine"
+		}
+	],
+	"result": {
+		"item": "stunningstatues:mossy_copper_golem_statue",
+		"count": 1
+	}
+}

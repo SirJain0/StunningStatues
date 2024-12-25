@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "stunningstatues:turtle_statue"
+		},
+		{
+			"item": "minecraft:vine"
+		}
+	],
+	"result": {
+		"item": "stunningstatues:mossy_turtle_statue",
+		"count": 1
+	}
+}

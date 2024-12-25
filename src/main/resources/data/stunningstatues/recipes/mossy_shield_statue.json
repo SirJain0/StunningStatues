@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "stunningstatues:shield_statue"
+		},
+		{
+			"item": "minecraft:vine"
+		}
+	],
+	"result": {
+		"item": "stunningstatues:mossy_shield_statue",
+		"count": 1
+	}
+}
