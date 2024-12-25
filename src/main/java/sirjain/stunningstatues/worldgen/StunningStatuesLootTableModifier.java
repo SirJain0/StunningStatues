@@ -49,7 +49,6 @@ public class StunningStatuesLootTableModifier {
 		StunningStatuesItems.BLAZE_STATUE_ITEM,
 	};
 
-
 	public static Identifier[] BURIED_VARIANTS = new Identifier[] {
 		LootTables.BURIED_TREASURE_CHEST,
 		LootTables.SHIPWRECK_TREASURE_CHEST,
@@ -75,7 +74,7 @@ public class StunningStatuesLootTableModifier {
 
 			for (Identifier location : BURIED_VARIANTS) {
 				for (Item statue : UNCOMMON_STATUES) {
-					appendItemToLootTable(location, statue, 0.01f, id, tableBuilder);
+					appendItemToLootTable(location, statue, 0.05f, id, tableBuilder);
 				}
 			}
 		});
