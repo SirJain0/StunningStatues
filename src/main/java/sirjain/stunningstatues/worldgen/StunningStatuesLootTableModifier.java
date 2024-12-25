@@ -74,7 +74,7 @@ public class StunningStatuesLootTableModifier {
 
 			for (Identifier location : BURIED_VARIANTS) {
 				for (Item statue : UNCOMMON_STATUES) {
-					appendItemToLootTable(location, statue, 0.05f, id, tableBuilder);
+					appendItemToLootTable(location, statue, 0.1f, id, tableBuilder);
 				}
 			}
 		});
