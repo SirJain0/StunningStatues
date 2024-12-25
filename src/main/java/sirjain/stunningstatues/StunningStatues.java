@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sirjain.stunningstatues.block.StunningStatuesBlocks;
 import sirjain.stunningstatues.item.StunningStatuesItems;
+import sirjain.stunningstatues.worldgen.StunningStatuesLootTableModifier;
 
 public class StunningStatues implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger("stunningstatues");
@@ -20,5 +21,6 @@ public class StunningStatues implements ModInitializer {
 		StunningStatuesItems.registerNormalStatueBlockItems();
 		StunningStatuesItems.registerMossyStatueBlockItems();
 		StunningStatuesItems.addItemsToTabs();
+		StunningStatuesLootTableModifier.registerLootTableModifiers();
 	}
 }
