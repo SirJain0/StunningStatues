@@ -1,9 +1,20 @@
-# Fabric Example Mod
+![Banner](https://cdn.modrinth.com/data/cached_images/15bf172b60141e9b8e4bab98e4af4d4b396c7685_0.webp)
 
-## Setup
+**Stunning Statues** is a mod that adds 17 new decorative statues to Minecraft.
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+Twelve common statues (pictured in the banner) can be found in any village chest. Statues depict mobs for the most part, except for some iconic items and blocks. 
 
-## License
+Five uncommon statues are rarer and can be found in the following locations: Buried treasure, shipwreck treasure, dungeons, and underwater ruins. These are not from Vanilla. You'll know which ones are uncommon because (besides the yellow name tag) they will glow slightly when placed down and their eyes will pulsate.
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+Each statue has a mossy variant which can be crafted with the statue and vines in either your inventory crafting or a crafting table. 
+
+**Can you find them all?**
+
+## Potential Future Ideas 
+- Structures with statues
+- Uncommon statues can give nearby players effects when "activated"
+- Achievements
+
+## Links
+- Issues and Suggestions: [https://github.com/SirJain0/StunningStatues/issues](https://github.com/SirJain0/StunningStatues/issues)
+- Discord Server: [https://discord.gg/nwDQcxpJG8](https://discord.gg/nwDQcxpJG8)
