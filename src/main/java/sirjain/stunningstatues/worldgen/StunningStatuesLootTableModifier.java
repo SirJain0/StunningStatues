@@ -1,20 +1,23 @@
 package sirjain.stunningstatues.worldgen;
 
-import net.fabricmc.fabric.api.loot.v2.FabricLootTableBuilder;
-import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.minecraft.item.Item;
 import net.minecraft.loot.LootPool;
+import net.minecraft.loot.LootTable;
 import net.minecraft.loot.LootTables;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
-import net.minecraft.util.Identifier;
+import net.minecraft.registry.RegistryKey;
 import sirjain.stunningstatues.item.StunningStatuesItems;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class StunningStatuesLootTableModifier {
-	public static final Identifier[] VILLAGE_VARIANTS = new Identifier[]{
+	public static final List<RegistryKey<LootTable>> VILLAGE_VARIANTS = Arrays.asList(
 		LootTables.VILLAGE_ARMORER_CHEST,
 		LootTables.VILLAGE_BUTCHER_CHEST,
 		LootTables.VILLAGE_CARTOGRAPHER_CHEST,
@@ -31,7 +34,7 @@ public class StunningStatuesLootTableModifier {
 		LootTables.VILLAGE_TEMPLE_CHEST,
 		LootTables.VILLAGE_TOOLSMITH_CHEST,
 		LootTables.VILLAGE_WEAPONSMITH_CHEST
-	};
+	);
 
 	public static final Item[] STATUES = new Item[] {
 		StunningStatuesItems.TURTLE_STATUE_ITEM,
@@ -49,13 +52,13 @@ public class StunningStatuesLootTableModifier {
 		StunningStatuesItems.BLAZE_STATUE_ITEM,
 	};
 
-	public static Identifier[] BURIED_VARIANTS = new Identifier[] {
+	public static List<RegistryKey<LootTable>> BURIED_VARIANTS = Arrays.asList(
 		LootTables.BURIED_TREASURE_CHEST,
 		LootTables.SHIPWRECK_TREASURE_CHEST,
 		LootTables.SIMPLE_DUNGEON_CHEST,
 		LootTables.UNDERWATER_RUIN_BIG_CHEST,
 		LootTables.UNDERWATER_RUIN_SMALL_CHEST
-	};
+	);
 
 	public static final Item[] UNCOMMON_STATUES = new Item[] {
 		StunningStatuesItems.ISOPOD_STATUE_ITEM,
@@ -65,30 +68,30 @@ public class StunningStatuesLootTableModifier {
 	};
 
 	public static void registerLootTableModifiers() {
-		LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-			for (Identifier location : VILLAGE_VARIANTS) {
+		LootTableEvents.MODIFY.register((key, tableBuilder, source, wrapperLookup) -> {
+			for (RegistryKey<LootTable> villageIteration : VILLAGE_VARIANTS) {
 				for (Item statue : STATUES) {
-					appendItemToLootTable(location, statue, 0.01f, id, tableBuilder);
+					if (key != villageIteration) continue;
+					appendItemToLootTable(statue, 0.01f, tableBuilder);
 				}
 			}
 
-			for (Identifier location : BURIED_VARIANTS) {
+			for (RegistryKey<LootTable> villageIteration : BURIED_VARIANTS) {
 				for (Item statue : UNCOMMON_STATUES) {
-					appendItemToLootTable(location, statue, 0.08f, id, tableBuilder);
+					if (key != villageIteration) continue;
+					appendItemToLootTable(statue, 0.08f, tableBuilder);
 				}
 			}
 		});
 	}
 
-	public static void appendItemToLootTable(Identifier target, Item item, float chance, Identifier id, FabricLootTableBuilder tableBuilder) {
-		if (!target.equals(id)) return;
-
-		LootPool.Builder poolBuilder = LootPool.builder()
+	public static void appendItemToLootTable(Item item, float chance, LootTable.Builder tableBuilder) {
+		LootPool.Builder poolBuilder = new LootPool.Builder()
 			.rolls(ConstantLootNumberProvider.create(1))
 			.conditionally(RandomChanceLootCondition.builder(chance))
 			.with(ItemEntry.builder(item))
 			.apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
-		tableBuilder.pool(poolBuilder.build());
+		tableBuilder.pool(poolBuilder);
 	}
 }

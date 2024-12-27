@@ -87,7 +87,7 @@ public class StunningStatuesBlocks {
 	public static Block registerNormalStatue(String identifier) {
 		return Registry.register(
 			Registries.BLOCK,
-			new Identifier(StunningStatues.MOD_ID, identifier + "_statue"),
+			Identifier.of(StunningStatues.MOD_ID, identifier + "_statue"),
 			new StatueBlock(false)
 		);
 	}
@@ -96,7 +96,7 @@ public class StunningStatuesBlocks {
 	public static Block registerMossyStatue(String identifier) {
 		return Registry.register(
 			Registries.BLOCK,
-			new Identifier(StunningStatues.MOD_ID, "mossy_" + identifier + "_statue"),
+			Identifier.of(StunningStatues.MOD_ID, "mossy_" + identifier + "_statue"),
 			new StatueBlock(false)
 		);
 	}
@@ -105,7 +105,7 @@ public class StunningStatuesBlocks {
 	public static Block registerUncommonStatue(String identifier) {
 		return Registry.register(
 			Registries.BLOCK,
-			new Identifier(StunningStatues.MOD_ID,identifier + "_statue"),
+			Identifier.of(StunningStatues.MOD_ID,identifier + "_statue"),
 			new StatueBlock(true)
 		);
 	}
@@ -114,7 +114,7 @@ public class StunningStatuesBlocks {
 	public static Block registerUncommonMossyStatue(String identifier) {
 		return Registry.register(
 			Registries.BLOCK,
-			new Identifier(StunningStatues.MOD_ID, "mossy_" + identifier + "_statue"),
+			Identifier.of(StunningStatues.MOD_ID, "mossy_" + identifier + "_statue"),
 			new StatueBlock(true)
 		);
 	}
