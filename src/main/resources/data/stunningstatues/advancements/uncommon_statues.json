@@ -1,0 +1,92 @@
+{
+	"display": {
+		"icon": {
+			"item": "stunningstatues:dumbo_blob_statue"
+		},
+		"title": "Bow Down",
+		"description": "Obtain all uncommon statues",
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"background": "textures/block/stone.png"
+	},
+	"criteria": {
+		"pixie_orb": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"stunningstatues:pixie_orb_statue"
+						]
+					}
+				]
+			}
+		},
+		"dumbo_blob": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"stunningstatues:dumbo_blob_statue"
+						]
+					}
+				]
+			}
+		},
+		"manta_ray": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"stunningstatues:manta_ray_statue"
+						]
+					}
+				]
+			}
+		},
+		"copper_golem": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"stunningstatues:copper_golem_statue"
+						]
+					}
+				]
+			}
+		},
+		"isopod": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"stunningstatues:isopod_statue"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"pixie_orb"
+		],
+		[
+			"dumbo_blob"
+		],
+		[
+			"manta_ray"
+		],
+		[
+			"copper_golem"
+		],
+		[
+			"isopod"
+		]
+	]
+}
