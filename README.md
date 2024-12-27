@@ -17,3 +17,5 @@ Each statue has a mossy variant which can be crafted with the statue and vines i
 ## Links
 - Issues and Suggestions: [https://github.com/SirJain0/StunningStatues/issues](https://github.com/SirJain0/StunningStatues/issues)
 - Discord Server: [https://discord.gg/nwDQcxpJG8](https://discord.gg/nwDQcxpJG8)
+- CurseForge: https://www.curseforge.com/minecraft/mc-mods/stunning-statues
+- Modrinth: https://modrinth.com/mod/stunning-statues
