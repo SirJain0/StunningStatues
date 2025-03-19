@@ -72,14 +72,14 @@ public class StunningStatuesLootTableModifier {
 			for (RegistryKey<LootTable> villageIteration : VILLAGE_VARIANTS) {
 				for (Item statue : STATUES) {
 					if (key != villageIteration) continue;
-					appendItemToLootTable(statue, 0.01f, tableBuilder);
+					appendItemToLootTable(statue, 0.005f, tableBuilder);
 				}
 			}
 
 			for (RegistryKey<LootTable> villageIteration : BURIED_VARIANTS) {
 				for (Item statue : UNCOMMON_STATUES) {
 					if (key != villageIteration) continue;
-					appendItemToLootTable(statue, 0.08f, tableBuilder);
+					appendItemToLootTable(statue, 0.03f, tableBuilder);
 				}
 			}
 		});
