@@ -2,14 +2,14 @@
 	"type": "minecraft:crafting_shapeless",
 	"ingredients": [
 		{
-			"item": "stunningstatues:copper_golem_statue"
+			"item": "stunningstatues:dumbo_blob_statue"
 		},
 		{
 			"item": "minecraft:vine"
 		}
 	],
 	"result": {
-		"item": "stunningstatues:mossy_copper_golem_statue",
+		"id": "stunningstatues:mossy_dumbo_blob_statue",
 		"count": 1
 	}
 }

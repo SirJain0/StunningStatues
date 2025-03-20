@@ -2,14 +2,14 @@
 	"type": "minecraft:crafting_shapeless",
 	"ingredients": [
 		{
-			"item": "stunningstatues:phantom_statue"
+			"item": "stunningstatues:banner_statue"
 		},
 		{
 			"item": "minecraft:vine"
 		}
 	],
 	"result": {
-		"item": "stunningstatues:mossy_phantom_statue",
+		"id": "stunningstatues:mossy_banner_statue",
 		"count": 1
 	}
 }

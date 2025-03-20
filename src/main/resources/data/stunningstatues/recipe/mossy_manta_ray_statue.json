@@ -2,14 +2,14 @@
 	"type": "minecraft:crafting_shapeless",
 	"ingredients": [
 		{
-			"item": "stunningstatues:squid_statue"
+			"item": "stunningstatues:manta_ray_statue"
 		},
 		{
 			"item": "minecraft:vine"
 		}
 	],
 	"result": {
-		"item": "stunningstatues:mossy_squid_statue",
+		"id": "stunningstatues:mossy_manta_ray_statue",
 		"count": 1
 	}
 }

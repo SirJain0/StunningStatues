@@ -2,14 +2,14 @@
 	"type": "minecraft:crafting_shapeless",
 	"ingredients": [
 		{
-			"item": "stunningstatues:pixie_orb_statue"
+			"item": "stunningstatues:endermite_statue"
 		},
 		{
 			"item": "minecraft:vine"
 		}
 	],
 	"result": {
-		"item": "stunningstatues:mossy_pixie_orb_statue",
+		"id": "stunningstatues:mossy_endermite_statue",
 		"count": 1
 	}
 }
