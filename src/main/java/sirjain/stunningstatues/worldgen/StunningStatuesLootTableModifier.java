@@ -68,13 +68,13 @@ public class StunningStatuesLootTableModifier {
 		LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
 			for (Identifier location : VILLAGE_VARIANTS) {
 				for (Item statue : STATUES) {
-					appendItemToLootTable(location, statue, 0.005f, id, tableBuilder);
+					appendItemToLootTable(location, statue, 0.002f, id, tableBuilder);
 				}
 			}
 
 			for (Identifier location : BURIED_VARIANTS) {
 				for (Item statue : UNCOMMON_STATUES) {
-					appendItemToLootTable(location, statue, 0.03f, id, tableBuilder);
+					appendItemToLootTable(location, statue, 0.001f, id, tableBuilder);
 				}
 			}
 		});
